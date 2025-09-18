@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
 
@@ -38,9 +39,9 @@
 <div class="order-right-side">
 
 <div class="order-right-side">
-    <button class="btn-property">-</button>
-     <p class="btn-property">0</p>
-    <button class="btn-property">+</button>
+    <button id="decbtn" class="btn-property">-</button>
+     <p id="btncont" class="btn-property">0</p>
+    <button id="incbtn" class="btn-property">+</button>
 </div>
     <div>
         <p class="btn-property"> $10.99</p>
@@ -58,11 +59,14 @@
 <div class="checkout">
 
 <div class="chekout-btn">
-    <button class="pay-btn">Proceed to Pay</button>
+    <button id="afterpay" class="pay-btn">Proceed to Pay</button>
 </div >
 
-<div class="conti-fooding">
-    <p>continue fooding</p>
+<div id="back"  class="conti-fooding">
+    <a href="index.html">
+        <p>continue fooding</p>
+    </a>
+   
 </div>
 
 </div>
