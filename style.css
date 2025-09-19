@@ -54,10 +54,35 @@ font-size: 1rem;
 }
 
 
-.hero-section{
-background-image: url('top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg');
 
+
+.hero-section{
+    
+    background-image: url('top-view-food-frame-with-copy-space.jpg');
+    background-size: cover;
+    background-position: center;
+
+    height: 90vh;
+    color: #edebf3;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align:left;
+    font-size: 3rem;
 }
+.hero-button{
+    font-size: 1.5rem;
+    background-color: rgb(251, 137, 96);
+    border-radius: 10px;
+    border: none;
+    cursor:pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hero-button:hover{
+transform: scale(1.05);
+}
+
 .search-select{
     background-color: #f3f3f3;
     width: 50px;
@@ -102,51 +127,70 @@ justify-content: center;
     display: flex;
     overflow-x: auto;  /* horizontal scroll*/
     scroll-snap-type: x mandatory;
-    
+    gap: 30px;
  }
+
+ .todays-pick p{
+     font-size: 2rem;
+     text-align: center;
+     font-weight: bold;
+     
+ }
+
+ .image-row h3{
+    color: #8c8888;
+  
+ }
+
+
  .foods{
-    margin: 10px;
-flex:0 0 80%;
+  
+flex:0 0 280px;
 scroll-snap-align: start;
 border-radius: 4px;
+text-align: center;
  }
 
  .foods img{
-   
-    width: 90%;
+    
+    width: 100%;
     height: 200px;
     object-fit: cover;
  }
 
- .todays-pick p {
-    font-weight: 800;
-    flex: 0 0 20%;
- }
+
 
 .search-fav-restro{
-    font-size: larger;
+    margin-top: 50px;
+    font-size: 3rem;
+    text-align: center;
 }
 
-.all-restro{
+
+.all-resto {
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr);   
+    gap: 20px;
+    padding: 20px; 
+}
+
+
+.restro {
+  
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     text-align: center;
-    overflow: hidden; /* Important for keeping rounded corners on the image */
+    overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
- 
 
-.restro{
-    text-align: center;
-    padding: 5px;
-    overflow: hidden;
-}
 
-.restro-img img{
-    width: 100%;;
+.restro-img img {
+    width: 100%;
     height: 190px;
     object-fit: cover;
 }
+
 
 .restro p {
     font-weight: bold;
@@ -159,7 +203,7 @@ border-radius: 4px;
    align-items: center;
 height: 500px;
 width: 100%;
-background-color:coral ;
+background-color:rgb(251, 137, 96) ;
 flex-direction: column;
 }
 
@@ -213,7 +257,7 @@ border-radius: 10px;
 .cart-main-heading{
     height: 100px;
     width: 100%;
-    background-color: coral;
+    background-color: rgb(251, 137, 96);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,7 +265,7 @@ border-radius: 10px;
 }
 
 .orders{
-    /* height: 210px; */
+    
     width: 100%;
     border: 2px solid grey;
     display: flex;
@@ -323,6 +367,15 @@ align-items: center;
     width: 100%; 
 }
 
+
+.hero-section {
+    font-size: 2rem; 
+    padding: 0 20px; 
+}
+
+.hero-button {
+    font-size: 1.2rem; 
+}
 }
 
 

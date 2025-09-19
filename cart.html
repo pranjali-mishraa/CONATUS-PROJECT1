@@ -3,73 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
     <script src="app.js" defer></script>
 </head>
 <body>
 
-    <div class="cart-main-heading">
-        <p> YOUR ORDER'S</p>
+    <header class="cart-header">
+        <h1>YOUR ORDERS</h1>
         <i class="fa-solid fa-cart-shopping"></i>
-      </div>
+    </header>
 
-
-<div class="add-to-cart">
-
-  
-
-  <div class="orders">
-
-    <div class="order-left-side">
-        <div class="order-image">
-            <img src="Screenshot 2025-09-18 at 5.15.35 AM.png" alt="">
-        </div>
-    <div class="order-details">
-        <div>
-            <p class="restro-name">The rooftop restro</p>
-            <p class="dish-name">Masala Dosa</p>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </div>
-    </div>
-</div>
-
-
-<div class="order-right-side">
-
-<div class="order-right-side">
-    <button id="decbtn" class="btn-property">-</button>
-     <p id="btncont" class="btn-property">0</p>
-    <button id="incbtn" class="btn-property">+</button>
-</div>
-    <div>
-        <p class="btn-property"> $10.99</p>
-    </div>
-
-
-</div>
-
-</div>
-
+    <main class="cart-container">
     
+        <article class="cart-item">
+            <div class="cart-item-left">
+                <div class="cart-item-image">
+                    <img src="delicious-indian-dosa-arrangement.jpg" alt="Masala Dosa from The Rooftop Restro">
+                </div>
+                <div class="cart-item-details">
+                    <p class="cart-item-title">The rooftop restro</p>
+                    <p class="cart-item-subtitle">Masala Dosa</p>
+                    <div class="cart-item-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="cart-item-right">
+                <div class="cart-quantity">
+                    <button id="decbtn" class="cart-quantity-btn">-</button>
+                    <p id="btncont" class="cart-quantity-value">0</p>
+                    <button id="incbtn" class="cart-quantity-btn">+</button>
+                </div>
+                <p class="cart-item-price">$10.99</p>
+            </div>
+        </article>
+
+        </main>
     
-<div class="checkout">
-
-<div class="chekout-btn">
-    <button id="afterpay" class="pay-btn">Proceed to Pay</button>
-</div >
-
-<div id="back"  class="conti-fooding">
-    <a href="index.html">
-        <p>continue fooding</p>
-    </a>
-   
-</div>
-
-</div>
+    <footer class="cart-footer">
+        <div class="cart-footer-action">
+            <button id="afterpay" class="cart-pay-btn">Proceed to Pay</button>
+        </div>
+        <div id="back"  class="cart-continue-link">
+            <a href="index.html">continue fooding</a>
+        </div>
+    </footer>
 
 </body>
 </html>
