@@ -29,7 +29,7 @@ width: 100%;
     border: 2px solid transparent;
 }
 .border :hover{
-    border: 2px solid black;
+    transform: scale(1.02);
 }
 .add-one{
     font-size: 0.85rem;
@@ -76,7 +76,7 @@ justify-content: center;
 
 .todays-pick{
     margin: 5px;
-   border: 2px solid grey; 
+   border: 2px solid transparent; 
     display: flex;
 flex-direction: column;
 text-align: center;
@@ -90,16 +90,18 @@ padding: 0 20px;
  .image-row{
     display: flex;
     overflow-x: auto;  /* horizontal scroll*/
-    gap: 10px;
     scroll-snap-type: x mandatory;
     
  }
  .foods{
+    margin: 10px;
 flex:0 0 80%;
 scroll-snap-align: start;
+border-radius: 4px;
  }
 
  .foods img{
+   
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -126,7 +128,7 @@ scroll-snap-align: start;
     justify-content: left;
     align-items: center;
     margin: 5px;
-   border: 5px solid grey;
+  
    border-radius: 5px;
     width: 100%;
     height: 200px;
@@ -287,15 +289,7 @@ align-items: center;
    .image-row{
     display: grid;
     grid-template-rows: repeat(auto-fit,minmax(150px,1fr));
-   }
-
-   .nav-search{
-    width: calc(50% - 10px);
-   }
-   
-   .nav-add{
-    width: calc(50% - 10px);
-   }
+   }   
 
    .foods img{
     height: 100px;
@@ -308,28 +302,20 @@ align-items: center;
     width: calc(50% - 10px);
   }
 
-   .navbar{
-    width: calc(50% - 10px);
-    display: flex;
-       flex-wrap: wrap;
-    }
-    .p{
+  .p{
         font-size: 1.5rem;
     }
-    
-
 }
 
 
 @media (max-width :600px){
     
-    .navbar{
-       
-       display: flex;
-       flex-wrap: wrap;
-       gap: 15px;
+    .nav-logo{
+        width: calc(60% - 20px);
     }
-    
+    .nav-search{
+        width: 100%;
+    }
 
 
     .todays-pick{
